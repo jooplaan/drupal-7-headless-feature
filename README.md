@@ -17,7 +17,6 @@ Open Terminal, cd to the directory where you want to host the Drupal instance.
 ```
 $ drush dl drupal
 $ cd drupal-7.X
-$ drush dl views features views_json
 ```
 
 Setup your hosting environment for the Drupal to point the preferred webserver document root to the drupal directory. Then run the Drupal installer using your browser. After the installation enable
@@ -25,8 +24,7 @@ this feature with Drush:
 
 ```
 $ cd sites/all/modules
-$ git init
-$ git pull git@github.com:jooplaan/drupal-7-headless-feature.git
+$ git clone git@github.com:jooplaan/drupal-7-headless-feature.git headless_drupal
 $ drush en headless_drupal --y
 ```
 
