@@ -25,9 +25,9 @@ this feature with Drush:
 ```
 $ cd sites/all/modules
 $ git clone git@github.com:jooplaan/drupal-7-headless-feature.git headless_drupal
-$ drush dl views features views_datasource ctools
-$ drush en views views_json views_ui features ctools
-$ drush en headless_drupal --y
+$ drush dl views features views_datasource ctools -y
+$ drush en views views_json views_ui features ctools -y
+$ drush en headless_drupal -y
 ```
 
 Next create some content in the Drupal install:
@@ -37,4 +37,6 @@ Next create some content in the Drupal install:
 * a few projects (used for portfolio)
 * a 'standard page' for the Contact page
 
+Having set up the headless Drupal part, you can move over to the AngularJS part.
 
+See: [AngularJS-d7client](https://github.com/jooplaan/AngularJS-d7client).
