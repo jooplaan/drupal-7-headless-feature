@@ -25,6 +25,8 @@ this feature with Drush:
 ```
 $ cd sites/all/modules
 $ git clone git@github.com:jooplaan/drupal-7-headless-feature.git headless_drupal
+$ drush dl views features views_datasource ctools
+$ drush en views views_json views_ui features ctools
 $ drush en headless_drupal --y
 ```
 
